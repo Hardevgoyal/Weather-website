@@ -12,7 +12,7 @@ const forecast=(latitude,longitude,callback) =>{
       callback("Unable to find Co-ordinates",undefined)
     }
     else{
-      callback(undefined,'The weather is '+body.current.weather_descriptions[0] +'.  '+'The temp is '+body.current.temperature+' but feels like '+ body.current.feelslike)
+      callback(undefined,'The weather is '+body.current.weather_descriptions[0] +'.  '+'The temp is '+body.current.temperature+' but feels like '+ body.current.feelslike + '.  The humidity is '+body.current.humidity + "%")
     }
   })
 }
